@@ -6,6 +6,7 @@ Topics Include:
 * Task Parallel Library
  * ParallelFor
  * P-LINQ
+   * AsParallel()
  * Task.WaitAny/One/etc.
  * Other methods in the TPL.
 * Concurrent Collections:
