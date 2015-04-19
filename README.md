@@ -4,16 +4,19 @@ A collection of practice materials and examples that I have created in my prepar
 Topics Include:
 --
 * Task Parallel Library
- * ParallelFor
- * P-LINQ
-   * AsParallel()
- * Task.WaitAny/One/etc.
- * Other methods in the TPL.
+  * **Parallel Methods**
+    * **Parallel.For**
+    * **Parallel.Foreach**
+    * **Parallel.Invoke**
+  * P-LINQ
+    * AsParallel()
+  * Task.WaitAny/One/etc.
+  * Other methods in the TPL.
 * Concurrent Collections:
- * ConcurrentBag
- * ConcurrentDictionary
- * ConcurrentQueue
- * BlockingCollection
+  * ConcurrentBag
+  * ConcurrentDictionary
+  * ConcurrentQueue
+  * BlockingCollection
 * Task Cancellations using CancellationTokens.
 * Locking
 * Unwrapping Tasks
