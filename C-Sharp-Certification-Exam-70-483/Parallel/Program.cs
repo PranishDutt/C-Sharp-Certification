@@ -19,21 +19,21 @@ namespace ParallelMethods
 				{
 					for (int i = 0; i < iterations; i++)
 					{
-						Pseudo.LongRunningTaskAction().Invoke();
+						Pseudo.LongRunningAction().Invoke();
 					}
 				});
 
 			// Parallel.For
-			ActionTimer.Time("Parallel.For", () => Parallel.For(0, iterations, Pseudo.LongRunningTaskActionInt()));
+			ActionTimer.Time("Parallel.For", () => Parallel.For(0, iterations, Pseudo.LongRunningActionInt()));
 
 			// Parallel.Foreach
-			ActionTimer.Time("Parallel.ForEach", () => Parallel.ForEach(Enumerable.Range(0, iterations), Pseudo.LongRunningTaskActionInt()));
+			ActionTimer.Time("Parallel.ForEach", () => Parallel.ForEach(Enumerable.Range(0, iterations), Pseudo.LongRunningActionInt()));
 
 			// Parallel.Invoke
 			Action[] iterationActions = new Action[iterations];
 			for (int i = 0; i < iterationActions.Length; i++)
 			{
-				iterationActions[i] = Pseudo.LongRunningTaskAction();
+				iterationActions[i] = Pseudo.LongRunningAction();
 			}
 
 			ActionTimer.Time("Parallel.Invoke", () => Parallel.Invoke(iterationActions));

@@ -9,12 +9,12 @@ namespace Helpers
 		private const int sleepDurationInMilliseconds = 1000;
 
 
-		public static Action LongRunningTaskAction()
+		public static Action LongRunningAction()
 		{
 			return new Action(() => Thread.Sleep(sleepDurationInMilliseconds));
 		}
 
-		public static Action<int> LongRunningTaskActionInt()
+		public static Action<int> LongRunningActionInt()
 		{
 			return new Action<int>((value) => Thread.Sleep(sleepDurationInMilliseconds));
 		}
