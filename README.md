@@ -3,7 +3,7 @@ A collection of practice materials and examples that I have created in my prepar
 
 Topics Include:
 --
-* Task Parallel Library
+* **Task Parallel Library**
   * **Parallel Methods**
     * **Parallel.For**
     * **Parallel.Foreach**
@@ -11,9 +11,11 @@ Topics Include:
   * **P-LINQ**
     * **AsParallel()**
     * **ForAll()**
-* Tasks
-  * TaskFactory
-  * Task.WaitAny/One/etc.
+* **Tasks**
+  * **TaskFactory.StartNew() vs. Task.Run()**
+  * **All variations of "Wait"**
+  * **async/await interactions with TaskFactory.StartNew and Task.Run (task unwrapping).**
+* Task Cancellations using CancellationTokens.
 * LINQ
  * Projection
  * Join, Group, Take, Skip, Aggregate
@@ -26,9 +28,7 @@ Topics Include:
   * ConcurrentDictionary
   * ConcurrentQueue
   * BlockingCollection
-* Task Cancellations using CancellationTokens.
 * Locking
-* Unwrapping Tasks
 * Keyword: "virtual"
 * Keyword: "sealed"
 * Keyword: "operator"
