@@ -11,10 +11,10 @@ Topics Include:
   * **P-LINQ**
     * **AsParallel()**
     * **ForAll()**
-* Tasks
-  * TaskFactory.StartNew() vs. Task.Run()
-  * All variations of "Wait"
-  * Async/Await
+* **Tasks**
+  * **TaskFactory.StartNew() vs. Task.Run()**
+  * **All variations of "Wait"**
+  * **async/await interactions with TaskFactory.StartNew and Task.Run (task unwrapping).**
 * LINQ
  * Projection
  * Join, Group, Take, Skip, Aggregate
