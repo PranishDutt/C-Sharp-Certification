@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("C-Sharp-Certification-Exam-70-483")]
+[assembly: AssemblyTitle("Helpers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Toshiba")]
-[assembly: AssemblyProduct("C-Sharp-Certification-Exam-70-483")]
+[assembly: AssemblyProduct("Helpers")]
 [assembly: AssemblyCopyright("Copyright © Toshiba 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c0a7991e-42f8-401c-b27d-22f163a6f594")]
+[assembly: Guid("be49aa2c-d496-421a-81d9-a697e4c8d598")]
 
 // Version information for an assembly consists of the following four values:
 //
