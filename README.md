@@ -8,10 +8,19 @@ Topics Include:
     * **Parallel.For**
     * **Parallel.Foreach**
     * **Parallel.Invoke**
-  * P-LINQ
-    * AsParallel()
+  * **P-LINQ**
+    * **AsParallel()**
+    * **ForAll()**
+* Tasks
+  * TaskFactory
   * Task.WaitAny/One/etc.
-  * Other methods in the TPL.
+* LINQ
+ * Projection
+ * Join, Group, Take, Skip, Aggregate
+ * LINQ Extension Methods
+ * Query Syntax vs. Lambda Syntax
+ * Deffered Query Execution
+   * Query is not actually executed until it is enumerated.
 * Concurrent Collections:
   * ConcurrentBag
   * ConcurrentDictionary
@@ -61,10 +70,3 @@ Topics Include:
  * XElement, XAttribute
 * XmlReader, XmlTextReader, XmlWriter, XmlNavigator
 * BinarySerialization, CustomSerialization, XMLSerilization, DataContractSerializer, DataContractJSONSerializer 
-* LINQ
- * Projection
- * Join, Group, Take, Skip, Aggregate
- * LINQ Extension Methods
- * Query Syntax vs. Lambda Syntax
- * Deffered Query Execution
-  * Query is not actually executed until it is enumerated.
