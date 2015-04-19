@@ -15,6 +15,7 @@ Topics Include:
   * **TaskFactory.StartNew() vs. Task.Run()**
   * **All variations of "Wait"**
   * **async/await interactions with TaskFactory.StartNew and Task.Run (task unwrapping).**
+* Task Cancellations using CancellationTokens.
 * LINQ
  * Projection
  * Join, Group, Take, Skip, Aggregate
@@ -27,9 +28,7 @@ Topics Include:
   * ConcurrentDictionary
   * ConcurrentQueue
   * BlockingCollection
-* Task Cancellations using CancellationTokens.
 * Locking
-* Unwrapping Tasks
 * Keyword: "virtual"
 * Keyword: "sealed"
 * Keyword: "operator"
