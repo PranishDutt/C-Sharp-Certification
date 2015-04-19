@@ -4,7 +4,7 @@ A collection of practice materials and examples that I have created in my prepar
 Topics Include:
 --
 * Task Parallel Library
- * ~~Parallel methods~~
+ * Parallel Methods (Parallel.For, Parallel.Foreach, Parallel.Invoke)
  * P-LINQ
    * AsParallel()
  * Task.WaitAny/One/etc.
