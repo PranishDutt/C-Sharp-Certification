@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Helpers;
 
@@ -24,7 +25,17 @@ namespace TaskConcepts
 				});
 
 			// Disclaimer
-			Console.WriteLine(Environment.NewLine + "Disclaimer:" + Environment.NewLine + "TaskFactory.StartNew() runs faster because Task.Run goes through a setup process for async/await. The task returned by TaskFactory.StartNew can not be used with async/await unless unwraped into an asynchronous operation with TaskExtensions.Unwrap().");
+			Console.WriteLine(Environment.NewLine + "Disclaimer:" + Environment.NewLine + "TaskFactory.StartNew() runs faster because Task.Run goes through a setup process for async/await. The task returned by TaskFactory.StartNew can not be used with async/await unless unwraped into an asynchronous operation with TaskExtensions.Unwrap()." + Environment.NewLine);
+
+			// Task Cancellation
+			ActionTimer.Time("Task Cancellation", () =>
+				{
+					Console.WriteLine("Starting cancellable task which will run for 60 seconds if not cancelled (cancellation is set to occur after 3 seconds).");
+					CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+					Task cancelableTask = Pseudo.LongRunningCancellableTask(cancellationTokenSource.Token);
+					cancellationTokenSource.CancelAfter(3000);
+					cancelableTask.Wait();
+				});
 
 			// Async / Await
 			AsyncAwaitConcepts();
