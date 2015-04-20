@@ -14,7 +14,9 @@ Topics Include:
 * **Tasks**
   * **TaskFactory.StartNew() vs. Task.Run()**
   * **All variations of "Wait"**
-  * **async/await interactions with TaskFactory.StartNew and Task.Run (task unwrapping).**
+  * **async/await**
+    * **Interactions with TaskFactory.StartNew().**
+      * **Task unwrapping.**
 * Task Cancellations using CancellationTokens.
 * LINQ
  * Projection
