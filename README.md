@@ -17,7 +17,7 @@ Topics Include:
   * **Keywords: async/await**
     * **Interactions with TaskFactory.StartNew()**
       * **Task unwrapping**
-* **Task Cancellations using CancellationTokens**
+* **Task Cancellation using CancellationTokens**
 * LINQ
  * Projection
  * Join, Group, Take, Skip, Aggregate
