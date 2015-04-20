@@ -6,15 +6,19 @@ namespace Helpers
 {
 	public static class Pseudo
 	{
-		private const int sleepDurationInMilliseconds = 1000;
+		private const int defaultSleepDuration = 1000;
 
+		public static async Task LongRunningTaskAsync(int sleepDurationInMilliseconds = defaultSleepDuration)
+		{
+			await Task.Delay(sleepDurationInMilliseconds);
+		}
 
-		public static Action LongRunningAction()
+		public static Action LongRunningAction(int sleepDurationInMilliseconds = defaultSleepDuration)
 		{
 			return new Action(() => Thread.Sleep(sleepDurationInMilliseconds));
 		}
 
-		public static Action<int> LongRunningActionInt()
+		public static Action<int> LongRunningActionInt(int sleepDurationInMilliseconds = defaultSleepDuration)
 		{
 			return new Action<int>((value) => Thread.Sleep(sleepDurationInMilliseconds));
 		}
