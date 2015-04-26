@@ -21,6 +21,7 @@ Topics Include:
 * LINQ
  * **Projection**
  * Query Keywords: https://msdn.microsoft.com/en-us/library/bb310804.aspx
+ * Query Expressions: https://msdn.microsoft.com/en-us/library/bb669116%28v=vs.110%29.aspx
  * Join, Group, Take, Skip, Aggregate
  * LINQ Extension Methods
  * Query Syntax vs. Lambda Syntax
