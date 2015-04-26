@@ -19,7 +19,8 @@ Topics Include:
       * **Task unwrapping**
 * **Task Cancellation using CancellationTokens**
 * LINQ
- * Projection
+ * **Projection**
+ * Query Keywords: https://msdn.microsoft.com/en-us/library/bb310804.aspx
  * Join, Group, Take, Skip, Aggregate
  * LINQ Extension Methods
  * Query Syntax vs. Lambda Syntax
