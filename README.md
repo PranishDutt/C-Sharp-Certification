@@ -1,4 +1,4 @@
-# C-Sharp-Certification-Exam-70-483
+# C-Sharp-Certification-Exam-70-483 (Microsoft Specialist - Programming in C#)
 A collection of practice materials and examples that I have created in my preparation for the Microsoft "Programming In C# (70-483)" exam.
 
 Topics Include:
