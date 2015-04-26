@@ -19,7 +19,7 @@ Topics Include:
       * **Task unwrapping**
 * **Task Cancellation using CancellationTokens**
 * LINQ
- * Projection
+ * **Projection**
  * Join, Group, Take, Skip, Aggregate
  * LINQ Extension Methods
  * Query Syntax vs. Lambda Syntax
