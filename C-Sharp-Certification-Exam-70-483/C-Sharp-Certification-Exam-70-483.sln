@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskConcepts", "TaskConcepts\TaskConcepts.csproj", "{21668D7C-3415-4BCC-8A64-3C6511B47A47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQConcepts", "LINQConcepts\LINQConcepts.csproj", "{C810974D-ED6C-4841-BC38-2E047CB65318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{21668D7C-3415-4BCC-8A64-3C6511B47A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21668D7C-3415-4BCC-8A64-3C6511B47A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21668D7C-3415-4BCC-8A64-3C6511B47A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C810974D-ED6C-4841-BC38-2E047CB65318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C810974D-ED6C-4841-BC38-2E047CB65318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C810974D-ED6C-4841-BC38-2E047CB65318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C810974D-ED6C-4841-BC38-2E047CB65318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
