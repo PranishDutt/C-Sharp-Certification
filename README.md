@@ -20,13 +20,13 @@ Topics Include:
 * **Task Cancellation using CancellationTokens**
 * LINQ
  * **Projection**
- * Query Keywords: https://msdn.microsoft.com/en-us/library/bb310804.aspx
- * Query Expressions: https://msdn.microsoft.com/en-us/library/bb669116%28v=vs.110%29.aspx
- * Join, Group, Take, Skip, Aggregate
- * LINQ Extension Methods
- * Query Syntax vs. Lambda Syntax
- * Deffered Query Execution
-   * Query is not actually executed until it is enumerated.
+ * **Query Keywords:** https://msdn.microsoft.com/en-us/library/bb310804.aspx
+ * **Query Expressions:** https://msdn.microsoft.com/en-us/library/bb669116%28v=vs.110%29.aspx
+ * **Join, Group, Take, Skip, Aggregate**
+ * **LINQ Extension Methods**
+ * **Query Syntax vs. Method Syntax**
+ * **Deffered Query Execution**
+   * **Query is not actually executed until it is enumerated.**
 * Concurrent Collections:
   * ConcurrentBag
   * ConcurrentDictionary
