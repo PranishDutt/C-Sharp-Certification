@@ -113,12 +113,12 @@ namespace Helpers
 			return Task.Run(() =>
 				{
 					int estimatedElapsedMilliseconds = 0;
-					while (!cancellationToken.IsCancellationRequested || estimatedElapsedMilliseconds > 60000)
+					while (!cancellationToken.IsCancellationRequested && estimatedElapsedMilliseconds < 60000)
 					{
 						Thread.Sleep(1000);
 						estimatedElapsedMilliseconds += 1000;
 					}
-				});
+				}, cancellationToken);
 		}
 
 		public static Action LongRunningAction(int sleepDurationInMilliseconds = defaultSleepDuration)
