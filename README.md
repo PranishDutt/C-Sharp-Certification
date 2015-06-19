@@ -18,7 +18,7 @@ Topics Include:
     * **Interactions with TaskFactory.StartNew()**
       * **Task unwrapping**
 * **Task Cancellation using CancellationTokens**
-* LINQ
+* **LINQ**
  * **Projection**
  * **Query Keywords:** https://msdn.microsoft.com/en-us/library/bb310804.aspx
  * **Query Expressions:** https://msdn.microsoft.com/en-us/library/bb669116%28v=vs.110%29.aspx
