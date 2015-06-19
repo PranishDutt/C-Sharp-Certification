@@ -13,7 +13,7 @@ namespace Helpers
 
 		#endregion
 
-		#region Data Class
+		#region Data Classes
 		public class StateCityData
 		{
 			public string State { get; set; }
@@ -23,6 +23,32 @@ namespace Helpers
 			{
 				this.State = state;
 				this.City = city;
+			}
+		}
+
+		public class CityData
+		{
+			public long CityId { get; set; }
+			public long StateId { get; set; }
+			public string City { get; set; }
+
+			public CityData(long cityId, long stateId, string city)
+			{
+				this.CityId = cityId;
+				this.StateId = stateId;
+				this.City = city;
+			}
+		}
+
+		public class StateData
+		{
+			public long StateId { get; set; }
+			public string State { get; set; }
+
+			public StateData(long StateId, string State)
+			{
+				this.StateId = StateId;
+				this.State = State;
 			}
 		}
 
@@ -42,6 +68,38 @@ namespace Helpers
 				new StateCityData("Nevada", "Las Vegas"),
 				new StateCityData("Florida", "Hollywood"),
 				new StateCityData("Pennsylvania", "Pittsburgh")
+			};
+		}
+
+		public static List<CityData> GetPseudoCityData()
+		{
+			return new List<CityData>()
+			{
+				new CityData(1, 1, "Austin"),
+				new CityData(2, 2, "New York"),
+				new CityData(3, 3, "San Diego"),
+				new CityData(4, 4, "Boston"),
+				new CityData(5, 5, "Nashvile"),
+				new CityData(6, 6, "Wichita"),
+				new CityData(7, 7, "Las Vegas"),
+				new CityData(8, 8, "Hollywood"),
+				new CityData(9, 9, "Pittsburgh")
+			};
+		}
+
+		public static List<StateData> GetPseudoStateData()
+		{
+			return new List<StateData>()
+			{
+				new StateData(7, "Nevada"),
+				new StateData(2, "New York"),
+				new StateData(8, "Florida"),
+				new StateData(4, "Massachusetts"),
+				new StateData(9, "Pennsylvania"),
+				new StateData(5, "Tennessee"),
+				new StateData(3, "California"),
+				new StateData(1, "Texas"),
+				new StateData(6, "Kansas")
 			};
 		}
 
