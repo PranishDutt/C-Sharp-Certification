@@ -13,6 +13,7 @@ namespace ParallelMethods
 		{
 			// Setup
 			int iterations = 10;
+			Console.WriteLine("Starting... ");
 
 			// Non-Parallel
 			ActionTimer.Time("Non-Parallel", () =>
