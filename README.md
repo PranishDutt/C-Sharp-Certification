@@ -39,6 +39,8 @@ Topics Include:
 * Keyword: "volatile"
 * Keyword: "unsafe"
 * Keyword: "implicit"
+* Keyword: "checked"
+* Keyword: "unchecked"
 * Delegates:
  * Func<T,U> | Action<T> | Comparison<T> | Comparison<T,U> | Predicate<T>
  * EventHandler<T>
