@@ -1,4 +1,4 @@
-# C-Sharp-Certification-Exam-70-483 (Microsoft Specialist - Programming in C#)
+# C-Sharp-Certification (Microsoft Specialist - Programming in C#)
 A collection of practice materials and examples that I have created in my preparation for the Microsoft "Programming In C# (70-483)" exam.
 
 Topics Include:
@@ -18,15 +18,15 @@ Topics Include:
     * **Interactions with TaskFactory.StartNew()**
       * **Task unwrapping**
 * **Task Cancellation using CancellationTokens**
-* LINQ
+* **LINQ**
  * **Projection**
- * Query Keywords: https://msdn.microsoft.com/en-us/library/bb310804.aspx
- * Query Expressions: https://msdn.microsoft.com/en-us/library/bb669116%28v=vs.110%29.aspx
- * Join, Group, Take, Skip, Aggregate
- * LINQ Extension Methods
- * Query Syntax vs. Lambda Syntax
- * Deffered Query Execution
-   * Query is not actually executed until it is enumerated.
+ * **Query Keywords:** https://msdn.microsoft.com/en-us/library/bb310804.aspx
+ * **Query Expressions:** https://msdn.microsoft.com/en-us/library/bb669116%28v=vs.110%29.aspx
+ * **Join, Group, Take, Skip, Aggregate**
+ * **LINQ Extension Methods**
+ * **Query Syntax vs. Method Syntax**
+ * **Deffered Query Execution**
+   * **Query is not actually executed until it is enumerated.**
 * Concurrent Collections:
   * ConcurrentBag
   * ConcurrentDictionary
@@ -39,6 +39,8 @@ Topics Include:
 * Keyword: "volatile"
 * Keyword: "unsafe"
 * Keyword: "implicit"
+* Keyword: "checked"
+* Keyword: "unchecked"
 * Delegates:
  * Func<T,U> | Action<T> | Comparison<T> | Comparison<T,U> | Predicate<T>
  * EventHandler<T>
