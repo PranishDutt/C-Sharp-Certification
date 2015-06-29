@@ -31,6 +31,7 @@ Topics Include:
   * **ConcurrentBag**
   * ConcurrentDictionary
   * ConcurrentQueue
+  * ConcurrentStack
   * BlockingCollection
 * Locking
 * Keyword: "virtual"
