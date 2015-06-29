@@ -28,7 +28,7 @@ Topics Include:
  * **Deffered Query Execution**
    * **Query is not actually executed until it is enumerated.**
 * Concurrent Collections:
-  * ConcurrentBag
+  * **ConcurrentBag**
   * ConcurrentDictionary
   * ConcurrentQueue
   * BlockingCollection
