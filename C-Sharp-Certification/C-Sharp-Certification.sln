@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskConcepts", "TaskConcept
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQConcepts", "LINQConcepts\LINQConcepts.csproj", "{C810974D-ED6C-4841-BC38-2E047CB65318}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentCollections", "ConcurrentCollections\ConcurrentCollections.csproj", "{B4739484-1AA7-4054-B655-4A30881DC81F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C810974D-ED6C-4841-BC38-2E047CB65318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C810974D-ED6C-4841-BC38-2E047CB65318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C810974D-ED6C-4841-BC38-2E047CB65318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4739484-1AA7-4054-B655-4A30881DC81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4739484-1AA7-4054-B655-4A30881DC81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4739484-1AA7-4054-B655-4A30881DC81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4739484-1AA7-4054-B655-4A30881DC81F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
