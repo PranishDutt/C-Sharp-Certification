@@ -32,6 +32,12 @@ namespace ConcurrentCollections
 			Parallel.Invoke(() => displayQueue(numbersQueue, 0, 30), () => displayQueue(numbersQueue, 30, 10), () => displayQueue(numbersQueue, 40, 10), () => displayQueue(numbersQueue, 50, 10), () => displayQueue(numbersQueue, 60, 10));
 			Console.WriteLine();
 
+			// ConcurrentStack
+			ConcurrentStack<int> numbersStack = new ConcurrentStack<int>();
+			Console.WriteLine("Concurrent Stack (Pushing & Popping in parallel on multiple threads):");
+			Parallel.Invoke(() => displayStack(numbersStack, 0, 30), () => displayStack(numbersStack, 30, 10), () => displayStack(numbersStack, 40, 10), () => displayStack(numbersStack, 50, 10), () => displayStack(numbersStack, 60, 10));
+			Console.WriteLine();
+
 			Console.ReadLine();
 
 		}
@@ -82,6 +88,23 @@ namespace ConcurrentCollections
 			while (numbersQueue.TryDequeue(out dequeuedValue))
 			{
 				message.Append(dequeuedValue + " ");
+				Thread.Sleep(1); // Force a context change
+			}
+
+			Console.WriteLine("Thread ({0}) processed: {1}", Thread.CurrentThread.ManagedThreadId, message);
+		}
+
+		private static void displayStack(ConcurrentStack<int> numbersStack, int enumerableStartValue, int count)
+		{
+			StringBuilder message = new StringBuilder();
+
+			numbersStack.PushRange(Enumerable.Range(enumerableStartValue, count).ToArray());
+			Thread.Sleep(100); // Force a context change
+
+			int poppedValue;
+			while (numbersStack.TryPop(out poppedValue))
+			{
+				message.Append(poppedValue + " ");
 				Thread.Sleep(1); // Force a context change
 			}
 
