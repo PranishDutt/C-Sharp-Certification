@@ -22,8 +22,15 @@ namespace ConcurrentCollections
 
 			// ConcurrentDictionary
 			ConcurrentDictionary<int, int> numbersDictionary = new ConcurrentDictionary<int, int>(); // Default comparer, concurrency level, and initial capacity.
-			Console.WriteLine("Concurrent Dictionary (Adding & Taking in parallel on multiple threads):");
+			Console.WriteLine("Concurrent Dictionary (Adding & Accessing in parallel on multiple threads):");
 			Parallel.Invoke(() => displayDictionary(numbersDictionary, 0, 30), () => displayDictionary(numbersDictionary, 30, 10), () => displayDictionary(numbersDictionary, 40, 10), () => displayDictionary(numbersDictionary, 50, 10), () => displayDictionary(numbersDictionary, 60, 10));
+			Console.WriteLine();
+
+			// ConcurrentQueue
+			ConcurrentQueue<int> numbersQueue = new ConcurrentQueue<int>();
+			Console.WriteLine("Concurrent Queue (Enqueuing & Dequeuing in parallel on multiple threads):");
+			Parallel.Invoke(() => displayQueue(numbersQueue, 0, 30), () => displayQueue(numbersQueue, 30, 10), () => displayQueue(numbersQueue, 40, 10), () => displayQueue(numbersQueue, 50, 10), () => displayQueue(numbersQueue, 60, 10));
+			Console.WriteLine();
 
 			Console.ReadLine();
 
@@ -58,6 +65,23 @@ namespace ConcurrentCollections
 			{
 				int value = numbersDictionary[i];
 				message.Append(value).Append(" ");
+				Thread.Sleep(1); // Force a context change
+			}
+
+			Console.WriteLine("Thread ({0}) processed: {1}", Thread.CurrentThread.ManagedThreadId, message);
+		}
+
+		private static void displayQueue(ConcurrentQueue<int> numbersQueue, int enumerableStartValue, int count)
+		{
+			StringBuilder message = new StringBuilder();
+
+			Enumerable.Range(enumerableStartValue, count).ToList().ForEach(value => numbersQueue.Enqueue(value));
+			Thread.Sleep(100); // Force a context change
+
+			int dequeuedValue;
+			while (numbersQueue.TryDequeue(out dequeuedValue))
+			{
+				message.Append(dequeuedValue + " ");
 				Thread.Sleep(1); // Force a context change
 			}
 
