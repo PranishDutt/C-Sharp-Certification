@@ -27,12 +27,12 @@ Topics Include:
  * **Query Syntax vs. Method Syntax**
  * **Deffered Query Execution**
    * **Query is not actually executed until it is enumerated.**
-* Concurrent Collections:
+* **Concurrent Collections:**
   * **ConcurrentBag**
-  * ConcurrentDictionary
-  * ConcurrentQueue
-  * ConcurrentStack
-  * BlockingCollection
+  * **ConcurrentDictionary**
+  * **ConcurrentQueue**
+  * **ConcurrentStack**
+  * **BlockingCollection**
 * Threading:
   * Keyword: "lock"
   * AutoResetEvent
