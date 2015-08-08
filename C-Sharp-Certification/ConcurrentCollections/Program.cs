@@ -38,6 +38,22 @@ namespace ConcurrentCollections
 			Parallel.Invoke(() => displayStack(numbersStack, 0, 30), () => displayStack(numbersStack, 30, 10), () => displayStack(numbersStack, 40, 10), () => displayStack(numbersStack, 50, 10), () => displayStack(numbersStack, 60, 10));
 			Console.WriteLine();
 
+			// BlockingCollection [ For Producer-Consumer Patterns ]
+			BlockingCollection<int> numbersBlockingCollection = new BlockingCollection<int>();
+			Console.WriteLine("BlockingCollection (Multiple Producers, Single Consumer):");
+			Task producerTaskA = GetAndStartProducerTask(numbersBlockingCollection, 0, 30);
+			Task producerTaskB = GetAndStartProducerTask(numbersBlockingCollection, 30, 10);
+			Task producerTaskC = GetAndStartProducerTask(numbersBlockingCollection, 40, 10);
+			Task producerTaskD = GetAndStartProducerTask(numbersBlockingCollection, 50, 10);
+			Task producerTaskE = GetAndStartProducerTask(numbersBlockingCollection, 60, 10);
+			Task consumerTask = GetAndStartConsumerTask(numbersBlockingCollection);
+
+			Task.WaitAll(producerTaskA, producerTaskB, producerTaskC, producerTaskD, producerTaskE);
+			numbersBlockingCollection.CompleteAdding();
+
+			Task.WaitAll(consumerTask);
+			numbersBlockingCollection.Dispose();
+
 			Console.ReadLine();
 
 		}
@@ -109,6 +125,34 @@ namespace ConcurrentCollections
 			}
 
 			Console.WriteLine("Thread ({0}) processed: {1}", Thread.CurrentThread.ManagedThreadId, message);
+		}
+
+		private static Task GetAndStartProducerTask(BlockingCollection<int> numbersBlockingCollection, int enumerableStartValue, int count)
+		{
+			return Task.Run(() =>
+			{
+				Enumerable.Range(enumerableStartValue, count).ToList().ForEach(value => numbersBlockingCollection.Add(value));
+				Thread.Sleep(1); // Force a context change
+			});
+		}
+
+		private static Task GetAndStartConsumerTask(BlockingCollection<int> numbersBlockingCollection)
+		{
+			return Task.Run(() =>
+			{
+				StringBuilder message = new StringBuilder();
+
+				while (!numbersBlockingCollection.IsCompleted)
+				{
+					int value;
+					if (numbersBlockingCollection.TryTake(out value))
+						message.Append(value + " ");
+
+					Thread.Sleep(1); // Force a context change
+				}
+
+				Console.WriteLine("Processed: " + message);
+			});
 		}
 	}
 }
