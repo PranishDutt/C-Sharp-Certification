@@ -50,6 +50,8 @@ Topics Include:
   * SpinLock
   * SpinWait
   * WaitHandle
+  * PLINQ WithDegreeOfParallelism(n) Extension Method
+    * Spawns and runs n tasks in parallel (useful when performing IO or waiting for multiple web responses).
 * Keyword: "virtual"
 * Keyword: "sealed"
 * Keyword: "operator"
