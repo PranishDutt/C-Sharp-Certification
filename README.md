@@ -27,12 +27,12 @@ Topics Include:
  * **Query Syntax vs. Method Syntax**
  * **Deffered Query Execution**
    * **Query is not actually executed until it is enumerated.**
-* Concurrent Collections:
+* **Concurrent Collections:**
   * **ConcurrentBag**
-  * ConcurrentDictionary
-  * ConcurrentQueue
-  * ConcurrentStack
-  * BlockingCollection
+  * **ConcurrentDictionary**
+  * **ConcurrentQueue**
+  * **ConcurrentStack**
+  * **BlockingCollection**
 * Threading:
   * Keyword: "lock"
   * AutoResetEvent
@@ -48,8 +48,12 @@ Topics Include:
   * Sempahore
   * SemaphoreSlim
   * SpinLock
+    * This is a struct for the sake of optimization via avoiding garbage collection. Do not copy instances of SpinLock by passing them to other methods without ref or declaring them as readonly fields (the C# compiler creates a copy of readonly fields when a non-static method is called to ensure that the readonly field remains [PURE] as the non-static method may change the value of the struct).
   * SpinWait
+    * This is a struct for the sake of optimization via avoiding garbage collection. Do not copy instances of SpinWait by passing them to other methods without ref or declaring them as readonly fields (the C# compiler creates a copy of readonly fields when a non-static method is called to ensure that the readonly field remains [PURE] as the non-static method may change the value of the struct).
   * WaitHandle
+  * PLINQ WithDegreeOfParallelism(n) Extension Method
+    * Spawns and runs n tasks in parallel (useful when performing IO or waiting for multiple web responses).
 * Keyword: "virtual"
 * Keyword: "sealed"
 * Keyword: "operator"
