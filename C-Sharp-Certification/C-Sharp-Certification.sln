@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQConcepts", "LINQConcept
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentCollections", "ConcurrentCollections\ConcurrentCollections.csproj", "{B4739484-1AA7-4054-B655-4A30881DC81F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingConcepts", "ThreadingConcepts\ThreadingConcepts.csproj", "{82067089-7D99-4071-9AFB-1051586ECA0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B4739484-1AA7-4054-B655-4A30881DC81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4739484-1AA7-4054-B655-4A30881DC81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4739484-1AA7-4054-B655-4A30881DC81F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82067089-7D99-4071-9AFB-1051586ECA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82067089-7D99-4071-9AFB-1051586ECA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82067089-7D99-4071-9AFB-1051586ECA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82067089-7D99-4071-9AFB-1051586ECA0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
