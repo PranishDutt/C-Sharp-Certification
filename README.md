@@ -97,3 +97,5 @@ Topics Include:
  * XElement, XAttribute
 * XmlReader, XmlTextReader, XmlWriter, XmlNavigator
 * BinarySerialization, CustomSerialization, XMLSerilization, DataContractSerializer, DataContractJSONSerializer 
+* C# 6 Language Features:
+  * https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6
