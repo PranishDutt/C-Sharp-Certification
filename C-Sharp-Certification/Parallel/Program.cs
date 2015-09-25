@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Helpers;
 
@@ -36,6 +37,26 @@ namespace ParallelMethods
 			{
 				iterationActions[i] = Pseudo.LongRunningAction();
 			}
+
+			ActionTimer.Time("Parallel.Invoke", () => Parallel.Invoke(iterationActions));
+
+			// Other Parallel method overloads
+			ActionTimer.Time("Parallel.Foreach overload using the TLocal variable and TLocal finalizer (time has significance for this example)", () =>
+			{
+				const int maxRange = 100000;
+				int totalBytes = 0;
+				Random random = new Random();
+				Parallel.ForEach(Enumerable.Range(0, random.Next(maxRange / 2, maxRange)), () => 0,
+					(integer, loopState, threadLocalSubtotal) =>
+					{
+						return threadLocalSubtotal + BitConverter.GetBytes(integer).Length;
+					},
+					(threadLocalSubtotal) =>
+					{
+						Interlocked.Add(ref totalBytes, threadLocalSubtotal);
+					});
+			});
+
 
 			ActionTimer.Time("Parallel.Invoke", () => Parallel.Invoke(iterationActions));
 
