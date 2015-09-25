@@ -21,6 +21,12 @@ namespace LINQConcepts
 			pseudoData.ForEach(data => Console.WriteLine(data.State + " " + data.City));
 			Console.WriteLine();
 
+			// SelectMany
+			Console.WriteLine("SelectMany Method:");
+			byte[] allCityBytes = pseudoData.SelectMany(data => Encoding.UTF8.GetBytes(data.City)).ToArray();
+			Console.WriteLine(Encoding.UTF8.GetString(allCityBytes));
+			Console.WriteLine();
+
 			// Projection Example 1 - Method Syntax
 			Console.WriteLine("Projected City Data - Method Syntax:");
 			var pseudoCityDataCollection = pseudoData.Select(data => data.City);
