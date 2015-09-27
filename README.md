@@ -54,6 +54,7 @@ Topics Include:
   * WaitHandle
   * PLINQ WithDegreeOfParallelism(n) Extension Method
     * Spawns and runs n tasks in parallel (useful when performing IO or waiting for multiple web responses).
+  * System.Threading.Tasks.DataFlow: https://msdn.microsoft.com/en-us/library/hh228603%28v=vs.110%29.aspx
 * Keyword: "virtual"
 * Keyword: "sealed"
 * Keyword: "operator"
