@@ -34,7 +34,7 @@ Topics Include:
   * **ConcurrentStack**
   * **BlockingCollection**
 * Threading:
-  * Keyword: "lock"
+  * **Keyword: "lock"**
   * AutoResetEvent
   * Barrier
   * Interlocked
