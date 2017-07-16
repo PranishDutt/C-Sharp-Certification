@@ -66,11 +66,11 @@ Topics Include:
 * Keyword: "checked"
 * Keyword: "unchecked"
 * Delegates:
- * Func<T,U> | Action<T> | Comparison<T> | Comparison<T,U> | Predicate<T>
- * EventHandler<T>
-  * Subscribe
-  * Unsubscribe
-   * Always unsubscribe when finished/object disposed/out of scope.
+  * Func<T,U> | Action<T> | Comparison<T> | Comparison<T,U> | Predicate<T>
+  * EventHandler<T>
+   * Subscribe
+   * Unsubscribe
+    * Always unsubscribe when finished/object disposed/out of scope.
 * Structs
 * Enums & Casting / Setting the "enum value" by using inheritance syntax to specify a type.
 * Generics
@@ -78,26 +78,26 @@ Topics Include:
 * Implementing IDisposable correctly
 * IComparable, IEnumerable, IUnknown
 * Polymorphism
- * Overload
- * Override
+  * Overload
+  * Override
 * Abstraction, Encapuslation, Inheritance, Composition
 * Asymmetric / Symmetric encryption
 * Hashing + Salting data
 * System.Diagnostics.Trace
- * TraceListeners
+  * TraceListeners
 * Profiling
 * System.Diagnostics.EventLog
 * File Methods:
- * File.ReadAllLines, File.ReadLine, File.WriteAllLines
+  * File.ReadAllLines, File.ReadLine, File.WriteAllLines
 * Streams:
- * CryptoStream
- * FileStream
- * MemoryStream
+  * CryptoStream
+  * FileStream
+  * MemoryStream
 * System.Net
- * WebRequest, WebResponse, HttpWebRequest, HttpWebResponse
+  * WebRequest, WebResponse, HttpWebRequest, HttpWebResponse
 * LINQ to XML
- * XDocument.Load
- * XElement, XAttribute
+  * XDocument.Load
+  * XElement, XAttribute
 * XmlReader, XmlTextReader, XmlWriter, XmlNavigator
 * BinarySerialization, CustomSerialization, XMLSerilization, DataContractSerializer, DataContractJSONSerializer 
 * C# 6 Language Features:
