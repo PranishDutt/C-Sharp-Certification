@@ -102,3 +102,5 @@ Topics Include:
 * BinarySerialization, CustomSerialization, XMLSerilization, DataContractSerializer, DataContractJSONSerializer 
 * C# 6 Language Features:
   * https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6
+* C# 7 Lanaguage Features:
+  * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7
