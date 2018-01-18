@@ -74,6 +74,7 @@ Topics Include:
 * Structs
 * Enums & Casting / Setting the "enum value" by using inheritance syntax to specify a type.
 * Generics
+  * Type Constraints: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
 * Pass by Reference vs. Value
 * Implementing IDisposable correctly
 * IComparable, IEnumerable, IUnknown
